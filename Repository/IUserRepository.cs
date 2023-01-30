@@ -6,6 +6,6 @@ namespace AuthenticationService.Repository
     {
         string Signup(UserDetail userDetail);
         bool Signin(UserDetail userDetail);
-
+        
     }
 }

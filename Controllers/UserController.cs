@@ -24,6 +24,8 @@ namespace AuthenticationService.Controllers
         public IConfiguration _config;
 
         private IDictionary<string, dynamic> response = new Dictionary<string, dynamic>();
+        
+
         public UserController(IUserRepository userRepository, IConfiguration config,UserDetailContext context)
         {
             _userRepository = userRepository;
@@ -31,6 +33,7 @@ namespace AuthenticationService.Controllers
             _context = context;
 
         }
+
         // GET: api/<UserController>
         [HttpGet]
         public IEnumerable<string> Get()
@@ -54,6 +57,8 @@ namespace AuthenticationService.Controllers
             try
             {
                 var _temp = _userRepository.Signup(value);
+                System.Diagnostics.Debug.WriteLine("OK");
+                System.Diagnostics.Debug.WriteLine(_temp);
                 if (_temp == "2")
                 {
                     response.Add("error", false);
@@ -102,7 +107,7 @@ namespace AuthenticationService.Controllers
             {
                 if (value != null && value.UserName != null && value.Password != null)
                 {
-                    var user = _context.UserDetails.Where(p => p.UserName == value.UserName && p.Password == value.Password).FirstOrDefault();
+                    var user = _context.UserDetails.Where(p => p.UserName == value.UserName && p.Password == value.Password || p.Phone == value.Phone).FirstOrDefault();
 
                     if (user != null)
                     {

@@ -1,4 +1,5 @@
 ﻿using AuthenticationService.UserModel;
+using System.Text.RegularExpressions;
 
 namespace AuthenticationService.Repository
 {
@@ -14,6 +15,7 @@ namespace AuthenticationService.Repository
 
             try
             {
+                Regex r = new Regex(@"^\+?\d{0,2}\-?\d{4,5}\-?\d{5,6}");
                 var user = _context.UserDetails.Where(p => p.UserName == userDetail.UserName).FirstOrDefault();
 
                 if (user != null)
@@ -22,6 +24,12 @@ namespace AuthenticationService.Repository
                 }
                 if (userDetail != null)
                 {
+                    //if (r.IsMatch(userDetail.Phone.ToString()))
+                    //{
+                    //    _context.UserDetails.Add(new UserDetail { Phone = userDetail.Phone, Password = userDetail.Password});
+                    //    _context.SaveChanges();
+                    //    return "2";
+                    //}
                     _context.UserDetails.Add(userDetail);
                     _context.SaveChanges();
                     return "2";
@@ -31,13 +39,20 @@ namespace AuthenticationService.Repository
                     return "3";
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
+
             {
+                System.Diagnostics.Debug.WriteLine(ex);
                 return "4";
             }
         }
 
         public bool Signin(UserDetail userDetail)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Signup()
         {
             throw new NotImplementedException();
         }

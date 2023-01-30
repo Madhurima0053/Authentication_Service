@@ -14,14 +14,16 @@ namespace AuthenticationService.UserModel
         public int UserId { get; set; }
 
         //[Column(TypeName ="nvarchar(100")]
-        [Required]
-        public string UserName { get; set; }
+        
+        public string? UserName { get; set; }
 
         //[Column(TypeName = "nvarchar(8")]
         [Required]
-        public string Password { get; set; } 
+        public string Password { get; set; }
+
+        public int? Phone  { get; set; }
 
 
-      
+
     }
 }

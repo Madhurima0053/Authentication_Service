@@ -274,3 +274,12 @@ C:\Users\2134164\source\repos\AuthenticationService\AuthenticationService\bin\De
 C:\Users\2134164\source\repos\AuthenticationService\AuthenticationService\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\2134164\source\repos\AuthenticationService\AuthenticationService\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\2134164\source\repos\AuthenticationService\AuthenticationService\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\2134164\source\repos\AuthenticationService\AuthenticationService\bin\Debug\net6.0\Castle.Core.dll
+C:\Users\2134164\source\repos\AuthenticationService\AuthenticationService\bin\Debug\net6.0\Moq.dll
+C:\Users\2134164\source\repos\AuthenticationService\AuthenticationService\bin\Debug\net6.0\Moq.AutoMock.dll
+C:\Users\2134164\source\repos\AuthenticationService\AuthenticationService\bin\Debug\net6.0\NonBlocking.dll
+C:\Users\2134164\source\repos\AuthenticationService\AuthenticationService\obj\Debug\net6.0\staticwebassets\msbuild.AuthenticationService.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\2134164\source\repos\AuthenticationService\AuthenticationService\obj\Debug\net6.0\staticwebassets\msbuild.build.AuthenticationService.props
+C:\Users\2134164\source\repos\AuthenticationService\AuthenticationService\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.AuthenticationService.props
+C:\Users\2134164\source\repos\AuthenticationService\AuthenticationService\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.AuthenticationService.props
+C:\Users\2134164\source\repos\AuthenticationService\AuthenticationService\obj\Debug\net6.0\staticwebassets.pack.json
